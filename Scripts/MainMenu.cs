@@ -1,0 +1,36 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+using UnityEngine.SceneManagement; 
+
+public class MainMenu : MonoBehaviour
+{
+    public void PlayGame()
+    {
+        SceneManager.LoadSceneAsync(1);
+    }
+    public void QuitGame()
+    {
+        Application.Quit();
+    }
+    public void OptionsMenu()
+    {
+        SceneManager.LoadSceneAsync(2);
+    }
+    public void ReturnMain()
+    {
+        SceneManager.LoadSceneAsync(0);
+    }
+	public void LoginMenu()
+    {
+        SceneManager.LoadSceneAsync(3);
+    }
+	public void HatShop()
+    {
+        SceneManager.LoadSceneAsync(4);
+    }
+    public void PlayCredits()
+    {
+        SceneManager.LoadSceneAsync(9);
+    }
+}
